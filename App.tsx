@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Gallery from './components/Gallery';
-import About from './components/About';
-import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
+import Header from './components/Header.tsx';
+import Hero from './components/Hero.tsx';
+import Services from './components/Services.tsx';
+import Gallery from './components/Gallery.tsx';
+import About from './components/About.tsx';
+import Footer from './components/Footer.tsx';
+import WhatsAppButton from './components/WhatsAppButton.tsx';
 
 const App: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
