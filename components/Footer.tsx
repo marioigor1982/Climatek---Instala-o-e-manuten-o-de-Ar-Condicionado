@@ -1,16 +1,20 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, Facebook, Twitter, Wind } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, Wind } from 'lucide-react';
 
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer id="contato" className="bg-white border-t border-gray-100 pt-20 pb-10">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-2">
-              <Wind className="w-8 h-8 text-blue-600" />
+            <div className="flex items-center space-x-3">
+              <div className="p-2 bg-blue-600 rounded-xl text-white">
+                <Wind className="w-6 h-6" />
+              </div>
               <span className="text-2xl font-bold font-header text-blue-900">CLIMATEK</span>
             </div>
             <p className="text-gray-500 leading-relaxed">
@@ -81,7 +85,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-          <p>© 2024 Climatek Soluções em Climatização. Todos os direitos reservados.</p>
+          <p>© {currentYear} Climatek Soluções em Climatização. Todos os direitos reservados.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-blue-600">Privacidade</a>
             <a href="#" className="hover:text-blue-600">Termos de Uso</a>

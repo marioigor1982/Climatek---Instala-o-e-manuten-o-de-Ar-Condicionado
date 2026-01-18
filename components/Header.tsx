@@ -24,9 +24,11 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
-          <Wind className={`w-8 h-8 ${scrolled ? 'text-blue-600' : 'text-white'}`} />
-          <span className={`text-2xl font-bold font-header ${scrolled ? 'text-blue-900' : 'text-white'}`}>
+        <div className="flex items-center space-x-3">
+          <div className={`p-2 rounded-xl transition-all ${scrolled ? 'bg-blue-600 text-white' : 'bg-white/20 text-white backdrop-blur-md'}`}>
+            <Wind className="w-6 h-6" />
+          </div>
+          <span className={`text-2xl font-bold font-header tracking-tight ${scrolled ? 'text-blue-900' : 'text-white'}`}>
             CLIMATEK
           </span>
         </div>

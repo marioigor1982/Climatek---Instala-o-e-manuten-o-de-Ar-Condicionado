@@ -4,6 +4,13 @@ import { ChevronLeft, ChevronRight, CheckCircle2, Wind } from 'lucide-react';
 
 const slides = [
   {
+    image: 'https://i.postimg.cc/gjrNsGMk/Bem-estar-conforto.avif',
+    title: 'Trabalhamos para que o seu bem estar esteja de tudo',
+    subtitle: 'Sua climatização é nossa prioridade. Oferecemos soluções personalizadas para o seu máximo conforto.',
+    bullets: ['Conforto', 'Bem-estar', 'Qualidade'],
+    tag: 'Boas-vindas'
+  },
+  {
     video: 'https://ik.imagekit.io/marioigor82/ar%20condicionado.mp4',
     title: 'Conforto Térmico para sua Casa',
     subtitle: 'Instalação profissional de ar condicionado residencial com garantia e eficiência.',
