@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, CheckCircle2, Wind } from 'lucide-react';
 const slides = [
   {
     image: 'https://i.postimg.cc/gjrNsGMk/Bem-estar-conforto.avif',
-    title: 'Trabalhamos para que o seu bem estar esteja de tudo',
+    title: 'Trabalhamos para garantir o seu bem estar e conforto',
     subtitle: 'Sua climatização é nossa prioridade. Oferecemos soluções personalizadas para o seu máximo conforto.',
     bullets: ['Conforto', 'Bem-estar', 'Qualidade'],
     tag: 'Boas-vindas'
