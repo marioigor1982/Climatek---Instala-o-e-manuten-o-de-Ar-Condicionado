@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content Slides */}
-      <div className="relative z-10 h-full container mx-auto px-6 md:px-12 flex flex-col justify-center items-start text-white">
+      <div className="relative z-10 h-full container mx-auto px-6 md:px-12 flex flex-col justify-start pt-32 md:pt-48 items-start text-white">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -104,17 +104,17 @@ const Hero: React.FC = () => {
             }`}
           >
             <div className="max-w-3xl">
-              <div className="flex items-center space-x-2 mb-6">
-                <span className="bg-blue-600 text-white px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest shadow-lg flex items-center">
-                  <Wind className="w-4 h-4 mr-2 animate-pulse" />
+              <div className="flex items-center space-x-2 mb-4">
+                <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg flex items-center">
+                  <Wind className="w-3.5 h-3.5 mr-2 animate-pulse" />
                   {slide.tag}
                 </span>
-                <span className="text-blue-200 text-sm font-semibold uppercase tracking-tighter opacity-70">
+                <span className="text-blue-200 text-xs font-semibold uppercase tracking-tighter opacity-70">
                   Climatek Soluções
                 </span>
               </div>
               
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-header mb-6 leading-[1.1] drop-shadow-2xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black font-header mb-4 leading-tight drop-shadow-2xl">
                 {slide.title.split(' ').map((word, i) => (
                   <span key={i} className={i % 2 !== 0 ? 'text-blue-400' : 'text-white'}>
                     {word}{' '}
@@ -122,21 +122,21 @@ const Hero: React.FC = () => {
                 ))}
               </h1>
               
-              <p className="text-xl md:text-2xl mb-10 text-blue-50 max-w-xl font-light leading-relaxed drop-shadow-md">
+              <p className="text-lg md:text-xl mb-8 text-blue-50 max-w-xl font-light leading-relaxed drop-shadow-md">
                 {slide.subtitle}
               </p>
               
               {/* Flyer-style Bullet Points */}
-              <div className="flex flex-wrap gap-4 mb-12">
+              <div className="flex flex-wrap gap-3 mb-10">
                 {slide.bullets.map((bullet, i) => (
                   <div 
                     key={i} 
-                    className="flex items-center space-x-3 bg-white/10 backdrop-blur-xl px-5 py-3 rounded-2xl border border-white/20 shadow-xl hover:bg-white/20 transition-colors"
+                    className="flex items-center space-x-2 bg-white/10 backdrop-blur-xl px-4 py-2 rounded-xl border border-white/20 shadow-xl hover:bg-white/20 transition-colors"
                   >
                     <div className="bg-blue-500 rounded-full p-1 shadow-inner">
-                      <CheckCircle2 className="w-4 h-4 text-white" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-white" />
                     </div>
-                    <span className="font-bold text-sm md:text-base tracking-wide">{bullet}</span>
+                    <span className="font-bold text-xs md:text-sm tracking-wide">{bullet}</span>
                   </div>
                 ))}
               </div>
@@ -146,13 +146,13 @@ const Hero: React.FC = () => {
                   href="https://wa.me/5511987654321"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-500 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-blue-400 transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(59,130,246,0.5)] text-center"
+                  className="bg-blue-500 text-white px-8 py-4 rounded-xl font-black text-base hover:bg-blue-400 transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(59,130,246,0.5)] text-center"
                 >
                   CONTRATAR AGORA
                 </a>
                 <a 
                   href="#servicos" 
-                  className="bg-white/10 backdrop-blur-md text-white border-2 border-white/30 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/20 transition-all text-center"
+                  className="bg-white/10 backdrop-blur-md text-white border-2 border-white/30 px-8 py-4 rounded-xl font-bold text-base hover:bg-white/20 transition-all text-center"
                 >
                   Ver Nossos Serviços
                 </a>
